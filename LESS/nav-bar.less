@@ -1,0 +1,51 @@
+.nav {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+
+    .logo {
+        font-family: 'Nunito', sans-serif;
+        font-size: 5rem;
+        color: @blue;
+        sup {
+            font-family: 'arial';
+            font-size: 1rem;
+        }
+    }
+    .nav-btns {
+        width: 100%;
+        margin: 0 20px 0 0;
+        text-align: right;
+    
+
+        .nav-btn1 {
+            margin: 0 15px 0 0;
+            padding: 10px 30px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            color: @black;
+            background: @white;
+            border: 3px solid @black;
+            border-radius: 25px;
+
+            .button-maker(@blue, @white);
+        }
+
+        .nav-btn2 {
+            padding: 10px 30px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            color: @black;
+            background: white;
+            border: 3px solid @black;
+            border-radius: 25px;
+
+            .button-maker(@blue, @white);
+        }
+    }
+}

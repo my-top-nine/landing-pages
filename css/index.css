@@ -156,53 +156,58 @@ a:active {
   margin: 0 auto;
 }
 .nav {
-  background: #4B88A2;
   padding: 2rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  position: fixed;
+  top: 0;
 }
-.logo {
+.nav .logo {
   font-family: 'Nunito', sans-serif;
   font-size: 5rem;
-  color: #FFF9FB;
+  color: #4B88A2;
 }
-sup {
+.nav .logo sup {
   font-family: 'arial';
   font-size: 1rem;
 }
-.nav {
-  border-bottom: 3px solid #252627;
-}
-.nav-btns {
+.nav .nav-btns {
   width: 100%;
   margin: 0 20px 0 0;
   text-align: right;
 }
-.nav-btn1 {
+.nav .nav-btns .nav-btn1 {
   margin: 0 15px 0 0;
   padding: 10px 30px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   color: #252627;
-  background: #FFF9FB;
   border: 3px solid #252627;
   border-radius: 25px;
+  color: #4B88A2;
+  background: #FFF9FB;
 }
-.nav-btn2 {
+.nav .nav-btns .nav-btn1:hover {
+  color: #FFF9FB;
+  background: #4B88A2;
+  cursor: pointer;
+}
+.nav .nav-btns .nav-btn2 {
   padding: 10px 30px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   color: #252627;
-  background: #FFF9FB;
+  background: white;
   border: 3px solid #252627;
   border-radius: 25px;
+  color: #4B88A2;
+  background: #FFF9FB;
 }
-.cta {
-  display: flex;
-}
-.cta img {
-  width: 200px;
+.nav .nav-btns .nav-btn2:hover {
+  color: #FFF9FB;
+  background: #4B88A2;
+  cursor: pointer;
 }
