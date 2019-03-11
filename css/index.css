@@ -154,7 +154,6 @@ a:active {
 .container {
   width: auto;
   margin: 0 auto;
-  background-color: #D3D4D9;
 }
 .nav {
   background: #4B88A2;
@@ -200,6 +199,9 @@ sup {
   background: #FFF9FB;
   border: 3px solid #252627;
   border-radius: 25px;
+}
+.cta {
+  display: flex;
 }
 .cta img {
   width: 200px;
