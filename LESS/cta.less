@@ -1,6 +1,28 @@
 .cta{
-    img{
-        width: 100%;
+    display: flex;
+    margin-top: 80px;
+    padding: 150px 0;
+    justify-content: center;
+    .cta-image{ 
+        width: 30%;
         height: auto;
+        margin-right: 10%;
+    }
+    .cta-catchphrase{
+        width: 25%;
+        font-size: 5rem;
+        text-align: center;
+        line-height: 100px;
+        padding-top: 25px;
+        color: @black;
+    }
+    .cta-button{
+        button{
+            width: 150px;
+            height: 60px;
+            font-size: 2.5rem;
+            .sign-up-button(@white, @red);
+        }
+        
     }
 }

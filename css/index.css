@@ -27,6 +27,34 @@ a:active {
 .container {
   margin: 0 auto;
 }
+.signUpButton {
+  display: flex;
+  margin: 140px 0 113px 0;
+  justify-content: center;
+}
+.signUpButton .sUBtn {
+  width: 280px;
+}
+.signUpButton .sUBtn button {
+  width: 280px;
+  height: 90px;
+  font-size: 4.5rem;
+  border-radius: 40px;
+  border: 2px solid #252627;
+  color: #FFF9FB;
+  background: #BB0A21;
+}
+.signUpButton .sUBtn button:hover {
+  color: #BB0A21;
+  background: #FFF9FB;
+  cursor: pointer;
+}
+strong {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #252627;
+  font-size: 5rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,14 +215,15 @@ table {
   font-weight: bold;
   font-size: 2rem;
   color: #252627;
+  background: #FFF9FB;
   border: 3px solid #252627;
   border-radius: 25px;
-  color: #4B88A2;
-  background: #FFF9FB;
-}
-.nav .nav-btns .nav-btn1:hover {
   color: #FFF9FB;
   background: #4B88A2;
+}
+.nav .nav-btns .nav-btn1:hover {
+  color: #4B88A2;
+  background: #FFF9FB;
   cursor: pointer;
 }
 .nav .nav-btns .nav-btn2 {
@@ -206,12 +235,12 @@ table {
   background: white;
   border: 3px solid #252627;
   border-radius: 25px;
-  color: #4B88A2;
-  background: #FFF9FB;
-}
-.nav .nav-btns .nav-btn2:hover {
   color: #FFF9FB;
   background: #4B88A2;
+}
+.nav .nav-btns .nav-btn2:hover {
+  color: #4B88A2;
+  background: #FFF9FB;
   cursor: pointer;
 }
 .main-content {
@@ -234,7 +263,111 @@ table {
   width: 200px;
   height: 200px;
 }
-.cta img {
-  width: 100%;
+.cta {
+  display: flex;
+  margin-top: 80px;
+  padding: 150px 0;
+  justify-content: center;
+}
+.cta .cta-image {
+  width: 30%;
   height: auto;
+  margin-right: 10%;
+}
+.cta .cta-catchphrase {
+  width: 25%;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 100px;
+  padding-top: 25px;
+  color: #252627;
+}
+.cta .cta-button button {
+  width: 150px;
+  height: 60px;
+  font-size: 2.5rem;
+  border-radius: 40px;
+  border: 2px solid #252627;
+  color: #FFF9FB;
+  background: #BB0A21;
+}
+.cta .cta-button button:hover {
+  color: #BB0A21;
+  background: #FFF9FB;
+  cursor: pointer;
+}
+.mission-statement {
+  display: flex;
+  border-top: 1px solid black;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  padding: 50px 0;
+  background: #FFF9FB;
+}
+.mission-statement .phrase {
+  font-size: 3rem;
+  width: 54%;
+}
+.mission-statement .phrase h2 {
+  text-align: center;
+  line-height: 75px;
+  color: #4B88A2;
+}
+.container {
+  max-width: 1500px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container .citeDescription1 {
+  margin: 215px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  padding: 10px;
+}
+.container .citeDescription1 .cD1-text {
+  width: 60%;
+  text-align: center;
+}
+.container .citeDescription1 .cD1-text h2 {
+  font-size: 4.5rem;
+  margin-top: 44px;
+}
+.container .citeDescription1 .cD1-text p {
+  font-size: 3.3rem;
+  line-height: 100px;
+}
+.container .citeDescription2 {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+  border: 1px solid;
+  padding: 10px;
+}
+.container .citeDescription2 .cD2-text {
+  width: 60%;
+  text-align: center;
+}
+.container .citeDescription2 .cD2-text h2 {
+  font-size: 4.5rem;
+  margin-top: 44px;
+}
+.container .citeDescription2 .cD2-text p {
+  font-size: 3.3rem;
+  line-height: 100px;
+}
+.container .container-img {
+  display: flex;
+  width: 30%;
+  height: auto;
+}
+footer {
+  color: #252627;
+  background: #D3D4D9;
+  padding: 20px 0;
+  border: 1px double #FFF9FB;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 120px;
 }

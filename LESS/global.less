@@ -22,6 +22,24 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     margin: 0 auto;
 }
 
-.resize-page{
-    
+.signUpButton {
+    display: flex;
+    margin: 140px 0 113px 0;
+    justify-content: center;    
+    .sUBtn {
+        width: 280px;
+        button {
+            width: 280px;
+            height: 90px;
+            font-size: 4.5rem;
+            .sign-up-button(@white, @red);
+        }
+    }
+}
+
+strong{
+    font-weight: bold;
+    text-decoration: underline;
+    color: @black;
+    font-size: 5rem;
 }
