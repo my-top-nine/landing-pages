@@ -1,11 +1,17 @@
 .nav {
-    background: rgba(37, 38, 39, 0.7);
+    background: rgba(75, 136, 162, 0.7);
     padding: 2rem;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     position: fixed;
     top: 0;
+
+    @media( max-width: 500px) {
+            background: rgba(187, 10, 33, 0.8);
+            flex-direction: column;
+            position: relative;
+        }
 
     .logo {
         font-family: 'Nunito', sans-serif;
@@ -15,11 +21,26 @@
             font-family: 'arial';
             font-size: 1rem;
         }
+        &:hover {
+        color: @red;
+        cursor: pointer;
+        }
+
+        @media( max-width: 500px) {
+            text-align: center;
+        }
+
     }
     .nav-btns {
         width: 100%;
         margin: 0 20px 0 0;
         text-align: right;
+
+        @media( max-width: 500px) {
+            text-align: center;
+            margin: 20px 0;
+        }
+
     
 
         .nav-btn1 {
