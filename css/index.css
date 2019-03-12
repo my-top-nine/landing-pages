@@ -156,6 +156,7 @@ a:active {
   margin: 0 auto;
 }
 .nav {
+  background: rgba(211, 212, 217, 0.7);
   padding: 2rem;
   display: flex;
   flex-wrap: nowrap;
@@ -185,7 +186,7 @@ a:active {
   font-size: 2rem;
   color: #252627;
   border: 3px solid #252627;
-  border-radius: 25px;
+  border-radius: 10px;
   color: #4B88A2;
   background: #FFF9FB;
 }
@@ -202,7 +203,7 @@ a:active {
   color: #252627;
   background: white;
   border: 3px solid #252627;
-  border-radius: 25px;
+  border-radius: 10px;
   color: #4B88A2;
   background: #FFF9FB;
 }
@@ -211,23 +212,76 @@ a:active {
   background: #4B88A2;
   cursor: pointer;
 }
-.main-content {
-  display: flex;
-  flex-flow: column;
+.cta {
+  background-image: url("../img/concert.png");
+  height: 800px;
 }
-.main-content .categories1 {
-  display: flex;
-  flex-flow: row nowrap;
+.cta h1 {
+  color: #BB0A21;
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
 }
-.main-content .categories1 {
-  display: flex;
-  flex-flow: row nowrap;
+.cta .cta-btn {
+  color: #BB0A21;
+  font-size: 5rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
 }
-.main-content .categories1 {
-  display: flex;
-  flex-flow: row nowrap;
+.top-content {
+  background-color: #D3D4D9;
+  padding: 60px 0;
 }
-.main-content img {
-  width: 200px;
+.top-content h2 {
+  font-size: 3.5rem;
+  color: #4B88A2;
+  text-align: center;
+}
+.middle-content {
+  padding: 5%;
+  border-top: 7px dashed #D3D4D9;
+}
+.middle-content h3 {
+  font-size: 4rem;
+}
+.middle-content .text-content {
+  width: 48%;
+}
+.middle-content .img-content {
+  width: 30%;
   height: 200px;
+  border-radius: 20%;
+}
+.middle-content .img-content img {
+  border-radius: 5%;
+}
+.middle-content .content-section1 {
+  margin: 30px 0;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.middle-content .content-section2 {
+  margin: 30px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.middle-content .content-section3 {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bottom-content h4 {
+  font-size: 3rem;
+  text-align: center;
 }
