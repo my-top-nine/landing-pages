@@ -1,3 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open-Sans', sans-serif;
+}
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  margin: 0 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,36 +154,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Open-Sans', sans-serif;
-}
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-  text-decoration: none;
-  color: inherit;
-}
-.container {
-  width: auto;
-  margin: 0 auto;
-}
 .nav {
   padding: 2rem;
   display: flex;
@@ -210,4 +209,28 @@ a:active {
   color: #FFF9FB;
   background: #4B88A2;
   cursor: pointer;
+}
+.main-content {
+  display: flex;
+  flex-flow: column;
+}
+.main-content .categories1 {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main-content .categories1 {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main-content .categories1 {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main-content img {
+  width: 200px;
+  height: 200px;
+}
+.cta img {
+  width: 100%;
+  height: auto;
 }
