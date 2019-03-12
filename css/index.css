@@ -155,26 +155,30 @@ table {
   border-spacing: 0;
 }
 .nav {
-  padding: 2rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   position: fixed;
   top: 0;
+  background-color: #252627;
 }
-.nav .logo {
+.nav .nav-logo {
+  padding: 15px 0 15px 1%;
+}
+.nav .nav-logo .logo {
   font-family: 'Nunito', sans-serif;
   font-size: 5rem;
   color: #4B88A2;
 }
-.nav .logo sup {
+.nav .nav-logo .logo sup {
   font-family: 'arial';
   font-size: 1rem;
 }
 .nav .nav-btns {
   width: 100%;
-  margin: 0 20px 0 0;
-  text-align: right;
+  padding-top: 10px;
+  text-align: end;
+  padding-right: 2%;
 }
 .nav .nav-btns .nav-btn1 {
   margin: 0 15px 0 0;
