@@ -172,12 +172,14 @@ a:active {
   flex-direction: row;
   position: fixed;
   top: 0;
+  z-index: 300;
 }
 @media (max-width: 500px) {
   .nav {
     background: rgba(187, 10, 33, 0.8);
     flex-direction: column;
     position: relative;
+    border-bottom: 1px solid #252627;
   }
 }
 .nav .logo {
@@ -215,7 +217,7 @@ a:active {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  border: 3px solid #252627;
+  border: 2px solid #D3D4D9;
   border-radius: 10px;
   color: #4B88A2;
   background: #FFF9FB;
@@ -225,12 +227,17 @@ a:active {
   background: #4B88A2;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .nav .nav-btns .nav-btn1 {
+    border: 1px solid #252627;
+  }
+}
 .nav .nav-btns .nav-btn2 {
   padding: 10px 30px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  border: 3px solid #252627;
+  border: 2px solid #D3D4D9;
   border-radius: 10px;
   color: #4B88A2;
   background: #FFF9FB;
@@ -239,6 +246,11 @@ a:active {
   color: #FFF9FB;
   background: #4B88A2;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav .nav-btns .nav-btn2 {
+    border: 1px solid #252627;
+  }
 }
 .cta {
   background-image: url("../img/concert.png");
@@ -313,7 +325,7 @@ a:active {
   }
 }
 .top-content {
-  background-color: #D3D4D9;
+  background-color: #eeeff1;
   padding: 60px 0;
 }
 .top-content h2 {
@@ -322,8 +334,8 @@ a:active {
   text-align: center;
 }
 .middle-content {
-  border-top: 7px dashed #D3D4D9;
-  border-bottom: 7px dashed #D3D4D9;
+  border-top: 7px dashed #eeeff1;
+  border-bottom: 7px dashed #eeeff1;
   background-color: #FFF9FB;
   padding: 60px 6%;
 }
@@ -397,9 +409,35 @@ a:active {
   }
 }
 .bottom-content {
-  background-color: #D3D4D9;
+  background-color: #eeeff1;
   padding: 20px 0;
   color: #BB0A21;
+}
+.bottom-content .bottom-btn {
+  text-align: center;
+  margin: 40px auto;
+}
+.bottom-content .bottom-btn1 {
+  background: #FFF9FB;
+  color: #252627;
+  font-size: 4rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 140px;
+  border: 3px solid #252627;
+  border-radius: 10px;
+  color: #FFF9FB;
+  background: #4B88A2;
+}
+.bottom-content .bottom-btn1:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+.bottom-content .bottom-btn1:hover {
+  color: #4B88A2;
+  background: #FFF9FB;
+  cursor: pointer;
 }
 .bottom-content h4 {
   font-size: 3rem;
@@ -410,4 +448,9 @@ footer {
   text-align: center;
   font-size: 1.3rem;
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  footer {
+    background: rgba(187, 10, 33, 0.8);
+  }
 }
