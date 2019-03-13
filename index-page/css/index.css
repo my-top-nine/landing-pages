@@ -253,8 +253,9 @@ a:active {
   }
 }
 .cta {
-  background-image: url("../img/concert.png");
+  background-image: url("../img/concertcolor.jpg");
   height: 800px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .cta {
@@ -323,6 +324,10 @@ a:active {
   .cta .cta-btn2 {
     display: block;
   }
+}
+.banner {
+  background: url('../img/starbanner.png');
+  height: 300px;
 }
 .top-content {
   background-color: #eeeff1;

@@ -220,7 +220,7 @@ a:active {
   color: inherit;
 }
 .container {
-  max-width: 1700px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -318,7 +318,7 @@ a:active {
   }
 }
 .cta {
-  background-image: url("../img/team2.png");
+  background-image: url("../img/team.jpeg");
   height: 800px;
 }
 @media (max-width: 500px) {
@@ -344,6 +344,7 @@ a:active {
   }
 }
 .cta .cta-text2 {
+  width: 100%;
   color: #252627;
   background: #FFF9FB;
   font-size: 3rem;
@@ -373,7 +374,7 @@ a:active {
 }
 .middle-content {
   background-image: url("../img/stars.png");
-  height: 1000px;
+  height: 1100px;
   border-top: 7px dashed #eeeff1;
   border-bottom: 7px dashed #eeeff1;
   padding: 60px 0;
