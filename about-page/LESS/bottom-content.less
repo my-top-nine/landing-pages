@@ -21,6 +21,11 @@
         &:hover {
             cursor: pointer;
             transform: scale(1.15);
+
+            @media( max-width: 500px) {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
         }
 
         .button-maker(@white, @blue);
