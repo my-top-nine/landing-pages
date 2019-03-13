@@ -186,12 +186,25 @@ table {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  position: fixed;
+  position: sticky;
   top: 0;
   background-color: #252627;
 }
+@media (max-width: 500px) {
+  .nav {
+    position: static;
+    flex-flow: column;
+    text-align: center;
+  }
+}
 .nav .nav-logo {
   padding: 15px 0 15px 1%;
+}
+@media (max-width: 500px) {
+  .nav .nav-logo {
+    margin-top: 35px;
+    padding: 15px 0 15px 0;
+  }
 }
 .nav .nav-logo .logo {
   font-family: 'Nunito', sans-serif;
@@ -207,6 +220,15 @@ table {
   padding-top: 10px;
   text-align: end;
   padding-right: 2%;
+}
+@media (max-width: 500px) {
+  .nav .nav-btns {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-top: 31px;
+    padding-right: 0;
+  }
 }
 .nav .nav-btns .nav-btn1 {
   margin: 0 15px 0 0;
@@ -226,6 +248,13 @@ table {
   background: #FFF9FB;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .nav .nav-btns .nav-btn1 {
+    width: 100%;
+    height: 125px;
+    font-size: 4rem;
+  }
+}
 .nav .nav-btns .nav-btn2 {
   padding: 10px 30px;
   font-family: 'Nunito', sans-serif;
@@ -242,6 +271,14 @@ table {
   color: #4B88A2;
   background: #FFF9FB;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav .nav-btns .nav-btn2 {
+    width: 100%;
+    height: 125px;
+    font-size: 4rem;
+    margin: 25px 0;
+  }
 }
 .main-content {
   display: flex;
