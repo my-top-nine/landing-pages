@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open-Sans', sans-serif;
+}
+h3 {
+  text-decoration: underline;
+}
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.nav {
+  background: rgba(75, 136, 162, 0.7);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 300;
+}
+@media (max-width: 500px) {
+  .nav {
+    background: rgba(187, 10, 33, 0.8);
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid #252627;
+  }
+}
+.nav .logo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 5rem;
+  color: #FFF9FB;
+}
+.nav .logo sup {
+  font-family: 'arial';
+  font-size: 1rem;
+}
+.nav .logo:hover {
+  color: #BB0A21;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav .logo {
+    text-align: center;
+  }
+}
+.nav .nav-btns {
+  width: 100%;
+  margin: 0 20px 0 0;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  .nav .nav-btns {
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+.nav .nav-btns .nav-btn1 {
+  margin: 0 15px 0 0;
+  padding: 10px 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 2px solid #D3D4D9;
+  border-radius: 10px;
+  color: #4B88A2;
+  background: #FFF9FB;
+}
+.nav .nav-btns .nav-btn1:hover {
+  color: #FFF9FB;
+  background: #4B88A2;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav .nav-btns .nav-btn1 {
+    border: 1px solid #252627;
+  }
+}
+.nav .nav-btns .nav-btn2 {
+  padding: 10px 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 2px solid #D3D4D9;
+  border-radius: 10px;
+  color: #4B88A2;
+  background: #FFF9FB;
+}
+.nav .nav-btns .nav-btn2:hover {
+  color: #FFF9FB;
+  background: #4B88A2;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav .nav-btns .nav-btn2 {
+    border: 1px solid #252627;
+  }
+}
+.bottom-content {
+  background-color: #eeeff1;
+  padding: 20px 0;
+  color: #BB0A21;
+}
+.bottom-content .bottom-btn {
+  text-align: center;
+  margin: 40px auto;
+}
+.bottom-content .bottom-btn1 {
+  background: #FFF9FB;
+  color: #252627;
+  font-size: 4rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 140px;
+  border: 3px solid #252627;
+  border-radius: 10px;
+  color: #FFF9FB;
+  background: #4B88A2;
+}
+.bottom-content .bottom-btn1:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+.bottom-content .bottom-btn1:hover {
+  color: #4B88A2;
+  background: #FFF9FB;
+  cursor: pointer;
+}
+.bottom-content h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+footer {
+  background: rgba(75, 136, 162, 0.7);
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  footer {
+    background: rgba(187, 10, 33, 0.8);
+  }
+}
