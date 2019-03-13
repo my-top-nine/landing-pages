@@ -6,11 +6,14 @@
         <title>About Us</title>
 
         <link rel="stylesheet" type="text/css" href="./CSS/about.css">
-        
+    
         <link href="https://fonts.googleapis.com/css?family=Nunito:600,800|Open+Sans:600" rel="stylesheet">
     </head>
 
     <body>
+
+        <script defer="defer" src="./javascript/tabs.js"></script>
+
         <div class='container'>
 
             <!--HEADER-->
@@ -19,7 +22,6 @@
                     <div class='nav-logo'>
                         <h1 class='logo'>
                             <a href='../index-page/index.html'>mytop9.com<sup>&reg</sup></a>
-                        </h1>
                     </div>
                     <div class='nav-btns'>
                         <a href='../index-page/index.html'><button class='nav-btn1'>Home</button></a>
@@ -28,17 +30,83 @@
                 </div>
             </header>
 
-            <!--Top Content-->
-            <section class="top-content">
+              <!---CTA-->
+            <section class='cta'>
+
+                <div class='cta-text'>
+                    <h1>Do you remember MySpace Top 8 friends?</h1>
+                </div>
+                <div class='cta-text2'>
+                    <h2>Well this is MyTopNine - a website that lets users select their Top-Nine in a variety of categories </h2>
+                </div>
+
             </section>
 
+            <!--Top Content-->
+            <section class='top-content'>
+                    <div class='transition-line'>
+                         <h2>Meet the team:</h2>
+                    </div>
+            </section>
+    
             <!--Middle Content-->
             <section class='middle-content'>
+                <div class="section">
+                        <div class="tabs">
+                            <div class="tabs-links">
+                                <div class="tabs-link tabs-link-selected" data-tab="1">Moin</div>
+                                <div class="tabs-link" data-tab="2">Brandon</div>
+                                <div class="tabs-link" data-tab="3">Austin</div>
+                                <div class="tabs-link" data-tab="4">Logan</div>
+                                <div class="tabs-link" data-tab="5">Jay</div>
+                                <div class="tabs-link" data-tab="6">Padraic</div>
+                            </div>
+                            <div class="tabs-items">
+                                <div class="tabs-item tabs-item-selected" data-tab="1">
+                                    <div class="tabs-item-title">Front End Engineer</div>
+                                    <div class="tabs-item-img">
+                                        <img src='./img/moin.png' alt="Moin">
+                                    </div>
+                                </div>
+                                <div class="tabs-item" data-tab="2">
+                                    <div class="tabs-item-title">UI</div>
+                                    <div class="tabs-item-img">
+                                        <img src='./img/brandon.png' alt="Brandon">
+                                    </div>
+                                </div>
+                                <div class="tabs-item" data-tab="3">
+                                    <div class="tabs-item-title">UI</div>
+                                    <div class="tabs-item-img">
+                                        <img src='./img/austin.png' alt="Austin">
+                                    </div>
+                                </div>
+                                <div class="tabs-item" data-tab="4">
+                                    <div class="tabs-item-title">Front End</div>
+                                    <div class="tabs-item-img">
+                                        <img src='./img/logan.png' alt="Logan">
+                                    </div>
+                                </div>
+                                <div class="tabs-item" data-tab="5">
+                                    <div class="tabs-item-title">Front End</div>
+                                    <div class="tabs-item-img">
+                                        <img src='./img/jay.png' alt="Jay">
+                                    </div>
+                                </div>
+                                <div class="tabs-item" data-tab="6">
+                                    <div class="tabs-item-title">Back End</div>
+                                    <div class="tabs-item-img">
+                                        <img src='./img/padraic.png' alt="Padraic">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
             
             <!--Bottom Content-->
             <section class='bottom-content'>
-                    <h4>And More!</h4>
                     <div class='bottom-btn'>
                     <a href=# target="_blank"><button class='bottom-btn1'>Sign Up</button></a>
                     </div>

@@ -1,0 +1,45 @@
+.cta {
+    background-image: url("../img/team2.png");
+    height: 800px;
+
+    @media( max-width: 500px) {
+        height: 500px;
+    }
+
+    .cta-text {
+        color: @red;
+        font-size: 4rem;
+        position: absolute;
+        top: 40%;
+        left: 50%; 
+        text-align: center;
+        text-shadow: 2px 2px 3px;
+        transform: translateX(-50%) translateY(-50%);
+
+        @media( max-width: 500px) {
+        top: 60%;
+        font-size: 2rem;
+        padding: 0 2%;
+        }
+    }
+
+    .cta-text2 {
+        color: @black;
+        background: @white;
+        font-size: 3rem;
+        position: absolute;
+        top: 70%;
+        left: 50%; 
+        text-align: center;
+        text-shadow: 2px 2px 3px;
+        transform: translateX(-50%) translateY(-50%);
+
+        @media( max-width: 500px) {
+
+        top: 80%;
+        left: 50%; 
+        font-size: 2rem;
+        padding: 0 2%;
+        }
+    }
+}
