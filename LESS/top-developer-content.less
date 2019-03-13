@@ -1,0 +1,32 @@
+.top-developer-content{
+    display: flex;
+    margin: 230px 0 150px 0;
+    justify-content: center;
+    @media @mobile {
+        flex-flow: column;
+        margin-top: 0;
+        padding: 0;
+    }
+    .tDC-image{ 
+        width: 30%;
+        height: auto;
+        margin-right: 10%;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .tDC-tagline{
+        width: 25%;
+        font-size: 5rem;
+        text-align: center;
+        line-height: 160px;
+        margin-top: 85px;
+        color: @black;
+        span{
+            text-decoration: underline;
+        } 
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}

@@ -29,8 +29,13 @@ a:active {
 }
 .signUpButton {
   display: flex;
-  margin: 140px 0 113px 0;
+  margin: 180px 0 113px 0;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  .signUpButton {
+    margin: 93px 0 -58px 0;
+  }
 }
 .signUpButton .sUBtn {
   width: 280px;
@@ -186,11 +191,11 @@ table {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: #252627;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .nav {
     position: static;
     flex-flow: column;
@@ -200,28 +205,29 @@ table {
 .nav .nav-logo {
   padding: 15px 0 15px 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .nav .nav-logo {
     margin-top: 35px;
     padding: 15px 0 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 .nav .nav-logo .logo {
-  font-family: 'Nunito', sans-serif;
-  font-size: 5rem;
-  color: #4B88A2;
+  width: 60%;
 }
-.nav .nav-logo .logo sup {
-  font-family: 'arial';
-  font-size: 1rem;
+.nav .nav-logo .logo img {
+  width: 80%;
 }
 .nav .nav-btns {
   width: 100%;
   padding-top: 10px;
   text-align: end;
   padding-right: 2%;
+  margin-top: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .nav .nav-btns {
     display: flex;
     flex-flow: column;
@@ -248,11 +254,12 @@ table {
   background: #FFF9FB;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .nav .nav-btns .nav-btn1 {
     width: 100%;
     height: 125px;
     font-size: 4rem;
+    margin: 0;
   }
 }
 .nav .nav-btns .nav-btn2 {
@@ -272,44 +279,35 @@ table {
   background: #FFF9FB;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .nav .nav-btns .nav-btn2 {
     width: 100%;
     height: 125px;
     font-size: 4rem;
-    margin: 25px 0;
+    margin: 15px 0 25px 0;
   }
-}
-.main-content {
-  display: flex;
-  flex-flow: column;
-}
-.main-content .categories1 {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.main-content .categories1 {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.main-content .categories1 {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.main-content img {
-  width: 200px;
-  height: 200px;
 }
 .cta {
   display: flex;
-  margin-top: 80px;
-  padding: 150px 0;
+  margin: 230px 0 150px 0;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  .cta {
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+  }
 }
 .cta .cta-image {
   width: 30%;
   height: auto;
   margin-right: 10%;
+}
+@media (max-width: 1000px) {
+  .cta .cta-image {
+    width: 100%;
+  }
 }
 .cta .cta-catchphrase {
   width: 25%;
@@ -317,7 +315,13 @@ table {
   text-align: center;
   line-height: 100px;
   padding-top: 25px;
+  height: 500px;
   color: #252627;
+}
+@media (max-width: 1000px) {
+  .cta .cta-catchphrase {
+    width: 100%;
+  }
 }
 .cta .cta-button button {
   width: 150px;
@@ -333,6 +337,15 @@ table {
   background: #FFF9FB;
   cursor: pointer;
 }
+@media (max-width: 1000px) {
+  .cta .cta-button button {
+    width: 34%;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-size: 3rem;
+    height: 73px;
+  }
+}
 .mission-statement {
   display: flex;
   border-top: 1px solid black;
@@ -344,6 +357,12 @@ table {
 .mission-statement .phrase {
   font-size: 3rem;
   width: 54%;
+}
+@media (max-width: 1000px) {
+  .mission-statement .phrase {
+    font-size: 2.3rem;
+    width: 86%;
+  }
 }
 .mission-statement .phrase h2 {
   text-align: center;
@@ -359,46 +378,86 @@ table {
   margin: 215px 0;
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
   padding: 10px;
+}
+@media (max-width: 1000px) {
+  .container .citeDescription1 {
+    margin: 0;
+    flex-flow: column;
+    padding: 0;
+  }
 }
 .container .citeDescription1 .cD1-text {
   width: 60%;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .container .citeDescription1 .cD1-text {
+    width: 100%;
+    margin-bottom: 95px;
+  }
+}
 .container .citeDescription1 .cD1-text h2 {
   font-size: 4.5rem;
-  margin-top: 44px;
+  margin-top: 65px;
 }
 .container .citeDescription1 .cD1-text p {
   font-size: 3.3rem;
   line-height: 100px;
 }
+@media (max-width: 1000px) {
+  .container .citeDescription1 .cD1-text p {
+    font-size: 3rem;
+    line-height: 73px;
+  }
+}
 .container .citeDescription2 {
   display: flex;
   justify-content: space-between;
   flex-flow: row-reverse;
-  border: 1px solid;
   padding: 10px;
+}
+@media (max-width: 1000px) {
+  .container .citeDescription2 {
+    margin: 0;
+    flex-flow: column;
+    padding: 0;
+  }
 }
 .container .citeDescription2 .cD2-text {
   width: 60%;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .container .citeDescription2 .cD2-text {
+    width: 100%;
+  }
+}
 .container .citeDescription2 .cD2-text h2 {
   font-size: 4.5rem;
-  margin-top: 44px;
+  margin-top: 65px;
 }
 .container .citeDescription2 .cD2-text p {
   font-size: 3.3rem;
   line-height: 100px;
 }
+@media (max-width: 1000px) {
+  .container .citeDescription2 .cD2-text p {
+    font-size: 3rem;
+    line-height: 73px;
+  }
+}
 .container .container-img {
   display: flex;
   width: 30%;
-  height: auto;
+  height: 444px;
 }
-footer {
+@media (max-width: 1000px) {
+  .container .container-img {
+    width: 100%;
+  }
+}
+.index-footer {
   color: #252627;
   background: #D3D4D9;
   padding: 20px 0;
@@ -407,4 +466,115 @@ footer {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 120px;
+}
+.top-developer-content {
+  display: flex;
+  margin: 230px 0 150px 0;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .top-developer-content {
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+.top-developer-content .tDC-image {
+  width: 30%;
+  height: auto;
+  margin-right: 10%;
+}
+@media (max-width: 1000px) {
+  .top-developer-content .tDC-image {
+    width: 100%;
+  }
+}
+.top-developer-content .tDC-tagline {
+  width: 25%;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 160px;
+  margin-top: 85px;
+  color: #252627;
+}
+.top-developer-content .tDC-tagline span {
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .top-developer-content .tDC-tagline {
+    width: 100%;
+  }
+}
+.container {
+  max-width: 1500px;
+  display: flex;
+  flex-flow: column nowrap;
+  border-top: 3px solid black;
+}
+@media (max-width: 1000px) {
+  .container {
+    border: none;
+  }
+}
+.container .developer {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+@media (max-width: 1000px) {
+  .container .developer {
+    margin: 0;
+    flex-flow: column;
+    padding: 0;
+  }
+}
+.container .developer .developer-text {
+  width: 60%;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .container .developer .developer-text {
+    width: 100%;
+    margin-bottom: 95px;
+  }
+}
+.container .developer .developer-text h2 {
+  font-size: 4.5rem;
+  margin-top: 65px;
+}
+.container .developer .developer-text p {
+  font-size: 3.3rem;
+  line-height: 100px;
+}
+@media (max-width: 1000px) {
+  .container .developer .developer-text p {
+    font-size: 3rem;
+    line-height: 73px;
+  }
+}
+.container .developer-img {
+  display: flex;
+  width: 30%;
+  height: 444px;
+}
+@media (max-width: 1000px) {
+  .container .developer-img {
+    width: 100%;
+  }
+}
+.about-footer {
+  color: #252627;
+  background: #D3D4D9;
+  padding: 20px 0;
+  border: 1px double #FFF9FB;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 120px;
+}
+@media (max-width: 1000px) {
+  .about-footer {
+    margin-top: 0;
+  }
 }

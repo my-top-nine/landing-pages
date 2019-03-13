@@ -6,18 +6,30 @@
         margin: 215px 0;
         display: flex;
         justify-content: space-between;
-        border: 1px solid;
         padding: 10px;
+        @media @mobile{
+            margin: 0;
+            flex-flow: column;
+            padding: 0;
+        }
         .cD1-text{
             width: 60%;
             text-align: center;
+            @media @mobile {
+                width: 100%;
+                margin-bottom: 95px;
+            }
             h2{
                 font-size: 4.5rem;
-                margin-top: 44px;
+                margin-top: 65px;
             }
             p{
                 font-size: 3.3rem;
                 line-height: 100px;
+                @media @mobile {
+                    font-size: 3rem;
+                    line-height: 73px;
+                }
             }
         }
     }
@@ -25,24 +37,38 @@
         display: flex;
         justify-content: space-between;
         flex-flow: row-reverse;
-        border: 1px solid;
         padding: 10px;
+        @media @mobile{
+            margin: 0;
+            flex-flow: column;
+            padding: 0;
+        }
         .cD2-text{
             width: 60%;
             text-align: center;
+            @media @mobile {
+                width: 100%
+            }
             h2{
                 font-size: 4.5rem;
-                margin-top: 44px;
+                margin-top: 65px;
             }
             p{
                 font-size: 3.3rem;
                 line-height: 100px;
+                @media @mobile {
+                    font-size: 3rem;
+                    line-height: 73px;
+                }
             }
         }
     }
     .container-img{
         display: flex;
         width: 30%;
-        height: auto;
+        height: 444px;
+        @media @mobile {
+            width: 100%;
+        }
     }
 }
