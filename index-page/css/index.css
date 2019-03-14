@@ -411,6 +411,11 @@ a:active {
     width: 200%;
   }
 }
+@media (max-width: 800px) {
+  .middle-content .img-content img {
+    width: 100%;
+  }
+}
 .middle-content .content-section1 {
   display: flex;
   flex-wrap: wrap;
