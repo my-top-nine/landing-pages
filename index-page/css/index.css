@@ -294,7 +294,7 @@ a:active {
   font-weight: bold;
   position: absolute;
   text-align: center;
-  top: 135%;
+  top: 130%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   border: none;
@@ -333,11 +333,10 @@ a:active {
   }
 }
 .banner {
-  background: url('../img/starbanner.png');
+  background: #252627;
   background-size: cover;
   width: 100%;
   height: 300px;
-  border: 3px solid black;
   padding: 120px 0;
 }
 @media (max-width: 500px) {
@@ -347,7 +346,7 @@ a:active {
   }
 }
 .banner h2 {
-  color: #252627;
+  color: #FFF9FB;
   text-align: center;
   font-size: 6rem;
   font-family: 'Nunito', sans-serif;
@@ -360,10 +359,12 @@ a:active {
   font-size: 3rem;
   color: #BB0A21;
   text-align: center;
+  text-decoration: underline;
 }
 .middle-content {
-  background-color: #252627;
+  background-image: url("../img/asphalt.jpg");
   padding: 60px 6%;
+  border-top: 2px solid #eeeff1;
 }
 .middle-content .text-content {
   width: 48%;
@@ -394,6 +395,7 @@ a:active {
   border-radius: 1%;
   height: 100%;
   width: 80%;
+  border: 2px solid #eeeff1;
   filter: gray;
   -webkit-filter: grayscale(1);
   -webkit-transition: all 0.2s ease-in-out;
@@ -429,9 +431,11 @@ a:active {
   justify-content: space-between;
 }
 .bottom-content {
+  border-top: 2px solid #eeeff1;
   background-color: #D3D4D9;
-  padding: 20px 0;
+  padding: 40px 0;
   color: #BB0A21;
+  text-decoration: underline;
 }
 .bottom-content .bottom-btn {
   text-align: center;

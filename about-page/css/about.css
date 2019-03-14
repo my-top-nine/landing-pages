@@ -28,9 +28,18 @@
   top: 20%;
   left: 25%;
 }
+.tabs .tabs-item .tabs-item-img:hover a {
+  opacity: 0.7;
+}
+.tabs .tabs-item .tabs-item-img:hover {
+  background-image: url("../img/github-logo.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: auto;
+}
 .tabs .tabs-item .tabs-item-img img {
   border: 5px solid #252627;
-  border-radius: 10px;
+  border-radius: 20%;
 }
 .tabs .tabs-item-selected {
   display: block;
@@ -230,6 +239,7 @@ a:active {
   }
 }
 .nav {
+  max-width: 1680px;
   background: rgba(75, 136, 162, 0.7);
   padding: 2rem;
   display: flex;
@@ -363,8 +373,8 @@ a:active {
 .middle-content {
   background-image: url("../img/stars.png");
   height: 1100px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid #eeeff1;
+  border-bottom: 2px solid #eeeff1;
   padding: 60px 0;
 }
 @media (max-width: 500px) {
