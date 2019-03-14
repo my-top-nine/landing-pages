@@ -83,7 +83,6 @@ time,
 mark,
 audio,
 video {
-  width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -155,7 +154,7 @@ a:active {
   color: inherit;
 }
 .container {
-  max-width: 1700px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -165,6 +164,8 @@ a:active {
   }
 }
 .nav {
+  width: 100%;
+  max-width: 1680px;
   background: rgba(75, 136, 162, 0.7);
   padding: 2rem;
   display: flex;
@@ -254,8 +255,10 @@ a:active {
 }
 .cta {
   background-image: url("../img/concertcolor.jpg");
-  height: 800px;
   width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center top;
 }
 @media (max-width: 500px) {
   .cta {
@@ -263,41 +266,43 @@ a:active {
   }
 }
 .cta h1 {
-  color: #BB0A21;
-  font-size: 6rem;
+  color: #252627;
+  font-size: 4rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
   text-align: center;
   text-shadow: 2px 2px 3px;
+  top: 50%;
+  left: 51%;
   transform: translateX(-50%) translateY(-50%);
 }
 @media (max-width: 500px) {
   .cta h1 {
-    font-size: 4rem;
-    padding: 0 2%;
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 48%;
+    left: 51%;
   }
 }
 .cta .cta-btn1 {
-  background: rgba(255, 249, 251, 0.2);
+  padding: 30px 100px;
+  background: #252627;
+  opacity: 0.9;
   color: #FFF9FB;
-  position: absolute;
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
+  position: absolute;
   text-align: center;
-  margin: 0 30px 0 0;
-  padding: 20px 140px;
+  top: 135%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   border: none;
-  border-radius: 10px;
-  top: 70%;
-  left: 28%;
-  transition: all 0.5s ease-in-out;
+  border-radius: 30%;
 }
 .cta .cta-btn1:hover {
-  color: #4B88A2;
+  background: #4B88A2;
   cursor: pointer;
-  transform: scale(1.2);
 }
 @media (max-width: 500px) {
   .cta .cta-btn1 {
@@ -306,19 +311,21 @@ a:active {
 }
 .cta .cta-btn2 {
   display: none;
-  background: #BB0A21;
+  background: #4B88A2;
   color: #FFF9FB;
   position: absolute;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-align: center;
   margin: 0 30px 0 0;
-  padding: 20px 80px;
-  border: none;
+  padding: 15px 90px;
+  border: 2px solid black;
   border-radius: 10px;
-  top: 75%;
-  left: 15%;
+  top: 53%;
+  left: 8%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .cta .cta-btn2 {
@@ -327,26 +334,42 @@ a:active {
 }
 .banner {
   background: url('../img/starbanner.png');
+  background-size: cover;
+  width: 100%;
   height: 300px;
+  border: 3px solid black;
+  padding: 120px 0;
+}
+@media (max-width: 500px) {
+  .banner {
+    padding: 70px 0;
+    border: 1px solid black;
+  }
+}
+.banner h2 {
+  color: #252627;
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Nunito', sans-serif;
 }
 .top-content {
-  background-color: #eeeff1;
+  background-color: #D3D4D9;
   padding: 60px 0;
 }
 .top-content h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #BB0A21;
   text-align: center;
 }
 .middle-content {
-  border-top: 7px dashed #eeeff1;
-  border-bottom: 7px dashed #eeeff1;
-  background-color: #FFF9FB;
+  background-color: #252627;
   padding: 60px 6%;
 }
 .middle-content .text-content {
   width: 48%;
-  padding: 5% 0 0 0;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 100px 0;
 }
 .middle-content .text-content h3 {
   font-size: 4rem;
@@ -354,7 +377,8 @@ a:active {
   text-align: center;
 }
 .middle-content .text-content p {
-  padding: 2% 0 0 0;
+  color: #FFF9FB;
+  padding: 15px 0 0 0;
   font-size: 3rem;
   text-align: center;
 }
@@ -368,7 +392,7 @@ a:active {
 }
 .middle-content .img-content img {
   border-radius: 1%;
-  height: 300px;
+  height: 100%;
   width: 80%;
   filter: gray;
   -webkit-filter: grayscale(1);
@@ -377,8 +401,8 @@ a:active {
 .middle-content .img-content img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media (max-width: 500px) {
   .middle-content .img-content img {
@@ -394,11 +418,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .middle-content .content-section2 {
-    margin-top: 40px;
-  }
+  margin: 80px 0;
 }
 .middle-content .content-section2 .img-content {
   text-align: right;
@@ -408,13 +428,8 @@ a:active {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .middle-content .content-section3 {
-    margin-top: 40px;
-  }
-}
 .bottom-content {
-  background-color: #eeeff1;
+  background-color: #D3D4D9;
   padding: 20px 0;
   color: #BB0A21;
 }
@@ -443,6 +458,11 @@ a:active {
   color: #4B88A2;
   background: #FFF9FB;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-btn1 {
+    padding: 10px 100px;
+  }
 }
 .bottom-content h4 {
   font-size: 3rem;

@@ -318,8 +318,11 @@ a:active {
   }
 }
 .cta {
-  background-image: url("../img/team.jpeg");
-  height: 800px;
+  background-image: url("../img/team4.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center top;
 }
 @media (max-width: 500px) {
   .cta {
@@ -327,56 +330,41 @@ a:active {
   }
 }
 .cta .cta-text {
-  color: #BB0A21;
-  font-size: 4rem;
+  color: #FFF9FB;
+  font-size: 5rem;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
+  width: 50%;
   text-align: center;
-  text-shadow: 2px 2px 3px;
   transform: translateX(-50%) translateY(-50%);
+  padding: 40px 40px;
+  border: 1px solid #252627;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .cta .cta-text {
-    top: 60%;
-    font-size: 2rem;
-    padding: 0 2%;
-  }
-}
-.cta .cta-text2 {
-  width: 100%;
-  color: #252627;
-  background: #FFF9FB;
-  font-size: 3rem;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  text-align: center;
-  text-shadow: 2px 2px 3px;
-  transform: translateX(-50%) translateY(-50%);
-}
-@media (max-width: 500px) {
-  .cta .cta-text2 {
-    top: 80%;
-    left: 50%;
-    font-size: 2rem;
+    top: 70%;
+    font-size: 5rem;
     padding: 0 2%;
   }
 }
 .top-content {
   background-color: #eeeff1;
   padding: 60px 0;
+  border-top: 1px solid #252627;
 }
 .top-content h2 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: #BB0A21;
   text-align: center;
 }
 .middle-content {
   background-image: url("../img/stars.png");
   height: 1100px;
-  border-top: 7px dashed #eeeff1;
-  border-bottom: 7px dashed #eeeff1;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 60px 0;
 }
 @media (max-width: 500px) {
@@ -395,10 +383,11 @@ a:active {
 }
 .middle-content .mobile-content .mobile-txt {
   text-align: center;
+  border-top: 3px solid #252627;
 }
 .middle-content .mobile-content .mobile-txt h3 {
   margin-top: 15px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #BB0A21;
 }
 .middle-content .mobile-content .mobile-txt p {
@@ -408,7 +397,6 @@ a:active {
 .middle-content .mobile-content .mobile-img {
   margin: 10px 0;
   padding: 20px 15% 60px 15%;
-  border-bottom: 3px solid #252627;
 }
 .middle-content .mobile-content .mobile-img img {
   border: 2px solid #252627;

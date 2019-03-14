@@ -1,13 +1,15 @@
 .middle-content {
-    border-top: 7px dashed @light-gray;
-    border-bottom: 7px dashed @light-gray;
-    background-color: @white;
+
+    background-color: @black;
     padding: 60px 6%;
 
 
     .text-content {
         width: 48%;
-        padding: 5% 0 0 0;
+        
+        border-radius: 3px;
+        background: rgba(0,0,0, 0.2);
+        padding: 100px 0;
 
         h3 {
             font-size: 4rem;
@@ -16,7 +18,8 @@
         }
         
         p {
-            padding: 2% 0 0 0;
+            color: @white;
+            padding: 15px 0 0 0;
             font-size: 3rem;
             text-align: center;
         }
@@ -31,7 +34,7 @@
         
         img {
             border-radius: 1%;
-            height: 300px;
+            height: 100%;
             width: 80%;
 
             filter: gray; 
@@ -41,8 +44,8 @@
             &:hover {
             filter: none;
                 -webkit-filter: grayscale(0);
-                -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
             }
 
             @media( max-width: 500px) {
@@ -61,11 +64,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 80px 0;
 
-        @media( max-width: 500px) {
-            margin-top: 40px;
-        }
-    
+     
         .img-content {
             text-align: right;
         }
@@ -74,9 +75,5 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
-        @media( max-width: 500px) {
-            margin-top: 40px;
-        }
     }
 }

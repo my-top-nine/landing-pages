@@ -1,5 +1,5 @@
 .bottom-content {
-    background-color: @light-gray;
+    background-color: @gray;
     padding: 20px 0;
     color: @red;
 
@@ -24,6 +24,11 @@
         }
 
         .button-maker(@white, @blue);
+
+        @media( max-width: 500px) {
+            padding: 10px 100px;
+    
+        }  
     }
 
     h4 {

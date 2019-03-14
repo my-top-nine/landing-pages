@@ -1,46 +1,37 @@
 .cta {
-    background-image: url("../img/team.jpeg");
-    height: 800px;
+    background-image: url("../img/team4.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center top;
+    
+    
 
     @media( max-width: 500px) {
         height: 500px;
     }
 
     .cta-text {
-        color: @red;
-        font-size: 4rem;
+        color: @white;
+        font-size: 5rem;
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%; 
+        width: 50%;
         text-align: center;
-        text-shadow: 2px 2px 3px;
+      
         transform: translateX(-50%) translateY(-50%);
+        padding: 40px 40px;
+        border: 1px solid @black;
+        border-radius: 10px;
+        background: rgba(0,0,0, 0.5);
 
         @media( max-width: 500px) {
-        top: 60%;
-        font-size: 2rem;
-        padding: 0 2%;
-        }
-    }
-
-    .cta-text2 {
-        width: 100%;
-        color: @black;
-        background: @white;
-        font-size: 3rem;
-        position: absolute;
         top: 70%;
-        left: 50%; 
-        text-align: center;
-        text-shadow: 2px 2px 3px;
-        transform: translateX(-50%) translateY(-50%);
-
-        @media( max-width: 500px) {
-
-        top: 80%;
-        left: 50%; 
-        font-size: 2rem;
+        font-size: 5rem;
         padding: 0 2%;
         }
     }
+
+
 }
