@@ -157,11 +157,18 @@ a:active {
   max-width: 1680px;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .container {
     width: 100%;
     margin: 0 auto;
   }
+}
+body {
+  transition: all 0.7s linear;
+}
+.loading {
+  opacity: 0;
+  visibility: hidden;
 }
 .nav {
   width: 100%;
@@ -175,7 +182,7 @@ a:active {
   top: 0;
   z-index: 300;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav {
     background: rgba(187, 10, 33, 0.8);
     flex-direction: column;
@@ -196,7 +203,7 @@ a:active {
   color: #BB0A21;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .logo {
     text-align: center;
   }
@@ -206,7 +213,7 @@ a:active {
   margin: 0 20px 0 0;
   text-align: right;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .nav-btns {
     text-align: center;
     margin: 20px 0;
@@ -228,7 +235,7 @@ a:active {
   background: #4B88A2;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .nav-btns .nav-btn1 {
     border: 1px solid #252627;
   }
@@ -248,7 +255,7 @@ a:active {
   background: #4B88A2;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .nav-btns .nav-btn2 {
     border: 1px solid #252627;
   }
@@ -260,7 +267,7 @@ a:active {
   background-size: cover;
   background-position: center top;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .cta {
     height: 500px;
   }
@@ -275,7 +282,7 @@ a:active {
   left: 51%;
   transform: translateX(-50%) translateY(-50%);
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .cta h1 {
     font-size: 3rem;
     white-space: nowrap;
@@ -300,11 +307,33 @@ a:active {
   border: none;
   border-radius: 30%;
 }
+.cta .cta-btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.cta .cta-btn1 span:after {
+  content: ':)';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 .cta .cta-btn1:hover {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.48), 0 20px 50px 0 rgba(0, 0, 0, 0.36);
   background: #4B88A2;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+.cta .cta-btn1:hover span {
+  padding-right: 25px;
+}
+.cta .cta-btn1:hover span:after {
+  opacity: 1;
+  right: 1;
+}
+@media ( max-width: 500px ) {
   .cta .cta-btn1 {
     display: none;
   }
@@ -314,20 +343,19 @@ a:active {
   background: #4B88A2;
   color: #FFF9FB;
   position: absolute;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin: 0 30px 0 0;
-  padding: 15px 90px;
+  padding: 10px 80px;
   border: 2px solid black;
   border-radius: 10px;
   top: 53%;
-  left: 8%;
+  left: 16%;
   white-space: nowrap;
   overflow: hidden;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .cta .cta-btn2 {
     display: block;
   }
@@ -336,13 +364,13 @@ a:active {
   background: #252627;
   background-size: cover;
   width: 100%;
-  height: 300px;
-  padding: 120px 0;
+  height: 200px;
+  padding: 75px;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .banner {
+    height: 150px;
     padding: 70px 0;
-    border: 1px solid black;
   }
 }
 .banner h2 {
@@ -351,26 +379,43 @@ a:active {
   font-size: 6rem;
   font-family: 'Nunito', sans-serif;
 }
+@media ( max-width: 500px ) {
+  .banner h2 {
+    font-size: 3rem;
+  }
+}
 .top-content {
   background-color: #D3D4D9;
+  background-image: linear-gradient(rgba(37, 38, 39), rgba(233, 236, 239));
   padding: 60px 0;
 }
 .top-content h2 {
   font-size: 3rem;
   color: #BB0A21;
   text-align: center;
-  text-decoration: underline;
+  font-weight: normal;
+}
+@media ( max-width: 500px ) {
+  .top-content h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
 }
 .middle-content {
-  background-image: url("../img/asphalt.jpg");
+  background-image: url("../img/middleimg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   padding: 60px 6%;
   border-top: 2px solid #eeeff1;
+  border-bottom: 2px solid #252627;
 }
 .middle-content .text-content {
   width: 48%;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.2);
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .middle-content .text-content h3 {
   font-size: 4rem;
@@ -383,7 +428,7 @@ a:active {
   font-size: 3rem;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .middle-content .text-content {
     display: none;
   }
@@ -406,14 +451,14 @@ a:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-@media (max-width: 500px) {
-  .middle-content .img-content img {
-    width: 200%;
-  }
-}
-@media (max-width: 800px) {
+@media ( max-width: 800px ) {
   .middle-content .img-content img {
     width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .middle-content .img-content img {
+    width: 420px;
   }
 }
 .middle-content .content-section1 {
@@ -425,7 +470,12 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 60px 0;
+}
+@media ( max-width: 500px ) {
+  .middle-content .content-section2 {
+    margin: 20px 0;
+  }
 }
 .middle-content .content-section2 .img-content {
   text-align: right;
@@ -435,16 +485,9 @@ a:active {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.bottom-content {
-  border-top: 2px solid #eeeff1;
-  background-color: #D3D4D9;
-  padding: 40px 0;
-  color: #BB0A21;
-  text-decoration: underline;
-}
 .bottom-content .bottom-btn {
   text-align: center;
-  margin: 40px auto;
+  margin-top: 20%;
 }
 .bottom-content .bottom-btn1 {
   background: #FFF9FB;
@@ -453,7 +496,7 @@ a:active {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-align: center;
-  padding: 10px 12%;
+  padding: 20px 20%;
   border: 3px solid #252627;
   border-radius: 10px;
   color: #FFF9FB;
@@ -468,7 +511,7 @@ a:active {
   background: #FFF9FB;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .bottom-content .bottom-btn1 {
     padding: 10px 100px;
   }
@@ -479,11 +522,12 @@ a:active {
 }
 footer {
   background: rgba(75, 136, 162, 0.7);
+  width: 100%;
   text-align: center;
   font-size: 1.3rem;
   padding: 20px 0;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   footer {
     background: rgba(187, 10, 33, 0.8);
   }

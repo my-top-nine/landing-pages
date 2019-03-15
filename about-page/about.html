@@ -6,15 +6,18 @@
         <title>About Us</title>
 
         <link rel="stylesheet" type="text/css" href="./CSS/about.css">
-    
+
         <link href="https://fonts.googleapis.com/css?family=Nunito:600,800|Open+Sans:600" rel="stylesheet">
+
+        <!--Animation scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
 
-    <body>
+    <body class="loading">
 
         <script defer="defer" src="./javascript/tabs.js"></script>
         <script defer="defer" src="./javascript/animations.js"></script>
-
+  
         <div class='container'>
 
             <!--Header-->
@@ -26,13 +29,13 @@
                         </h1>
                     </div>
                     <div class='nav-btns'>
-                        <a href='../index-page/index.html'><button class='nav-btn1'>Home</button></a>
-                        <a href='https://my-top-nine-logan.netlify.com/'><button class='nav-btn2'>Login</button></a>
+                        <button class='nav-btn1'><a href='../index-page/index.html'>Home</a></button>
+                        <button class='nav-btn2'><a href='https://my-top-nine-logan.netlify.com/'>Login</a></button>
                     </div>
                 </div>
             </header>
 
-              <!--CTA-->
+            <!--CTA-->
             <section class='cta'>
                 <div class='cta-text'>
                     <h1>Meet the Team</h1>
@@ -41,9 +44,6 @@
 
             <!--Top Content-->
             <section class='top-content'>
-                <div class='transition-line'>
-                    <h2>My Top 9 Creators</h2>
-                </div>
             </section>
     
             <!--Middle Content-->
@@ -51,7 +51,7 @@
 
                 <div class='mobile-content'>
 
-                    <div class='mobile-txt'>
+                    <div class='mobile-txt' id="moin-txt">
                         <h3>Moin</h3>
                         <p>Team Leader</p>
                     </div>
@@ -152,25 +152,24 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
+                <!--Bottom Content-->
+                <section class='bottom-content' id='btm-id'>
+                    <div class='bottom-btn'>
+                    <a href='https://my-top-nine-logan.netlify.com/' target="_blank"><button class='bottom-btn1'>Sign Up</button></a>
+                    </div>
+                </section>
 
-            </section>
-            
-            <!--Bottom Content-->
-            <section class='bottom-content'>
-                <div class='bottom-btn'>
-                <a href='https://my-top-nine-logan.netlify.com/' target="_blank"><button class='bottom-btn1'>Sign Up</button></a>
-                </div>
             </section>
                 
             <!--Footer-->
             <section class='footer'>
                 <footer>
-                    <p>Copyright 2019 My Top 9</p>
+                    <p>&copy 2019 My Top 9</p>
                 </footer>
             </section>
 
-
         </div>  
+
     </body> 
 </html>

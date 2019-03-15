@@ -9,37 +9,40 @@
     top: 0;
     z-index: 300;
 
-    @media( max-width: 500px) {
-            background: rgba(187, 10, 33, 0.8);
-            flex-direction: column;
-            position: relative;
-            border-bottom: 1px solid @black;
-        }
+    @media @mobile {
+        background: rgba(187, 10, 33, 0.8);
+        flex-direction: column;
+        position: relative;
+        border-bottom: 2px solid @black;
+    }
 
     .logo {
         font-family: 'Nunito', sans-serif;
         font-size: 5rem;
         color: @white;
+
         sup {
             font-family: 'arial';
             font-size: 1rem;
         }
+
         &:hover {
-        color: @red;
-        cursor: pointer;
+            color: @red;
+            cursor: pointer;
         }
 
-        @media( max-width: 500px) {
+        @media @mobile {
             text-align: center;
         }
 
     }
+
     .nav-btns {
         width: 100%;
         margin: 0 20px 0 0;
         text-align: right;
 
-        @media( max-width: 500px) {
+        @media @mobile {
             text-align: center;
             margin: 20px 0;
         }
@@ -55,7 +58,7 @@
 
             .button-maker(@blue, @white);
 
-            @media( max-width: 500px) {
+            @media @mobile {
                 border: 1px solid @black;
             }
         }
@@ -70,7 +73,7 @@
 
             .button-maker(@blue, @white);
 
-            @media( max-width: 500px) {
+            @media @mobile {
                 border: 1px solid @black;
             }
         }

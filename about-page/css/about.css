@@ -73,7 +73,7 @@
   opacity: 0.8;
   color: #FFF9FB;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .tabs {
     display: none;
   }
@@ -244,6 +244,13 @@ a:active {
     margin: 0 auto;
   }
 }
+body {
+  transition: all 0.2s linear;
+}
+.loading {
+  opacity: 0;
+  visibility: hidden;
+}
 .nav {
   max-width: 1680px;
   background: rgba(75, 136, 162, 0.7);
@@ -255,12 +262,12 @@ a:active {
   top: 0;
   z-index: 300;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav {
     background: rgba(187, 10, 33, 0.8);
     flex-direction: column;
     position: relative;
-    border-bottom: 1px solid #252627;
+    border-bottom: 2px solid #252627;
   }
 }
 .nav .logo {
@@ -276,7 +283,7 @@ a:active {
   color: #BB0A21;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .logo {
     text-align: center;
   }
@@ -286,7 +293,7 @@ a:active {
   margin: 0 20px 0 0;
   text-align: right;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .nav-btns {
     text-align: center;
     margin: 20px 0;
@@ -308,7 +315,7 @@ a:active {
   background: #4B88A2;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .nav-btns .nav-btn1 {
     border: 1px solid #252627;
   }
@@ -328,7 +335,7 @@ a:active {
   background: #4B88A2;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .nav .nav-btns .nav-btn2 {
     border: 1px solid #252627;
   }
@@ -340,7 +347,7 @@ a:active {
   background-size: cover;
   background-position: center top;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .cta {
     height: 500px;
   }
@@ -359,39 +366,37 @@ a:active {
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .cta .cta-text {
     top: 70%;
     font-size: 5rem;
     padding: 0 2%;
   }
 }
-.top-content {
-  background-color: #eeeff1;
-  padding: 60px 0;
-  border-top: 1px solid #252627;
-}
-.top-content h2 {
-  font-size: 5rem;
-  color: #BB0A21;
-  text-align: center;
+#moin-txt {
+  border-top: none;
 }
 .middle-content {
-  background-image: url("../img/stars.png");
-  height: 1100px;
-  border-top: 2px solid #eeeff1;
-  border-bottom: 2px solid #eeeff1;
+  background-image: url("../img/middleimg4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1200px;
+  border-top: 3px solid #252627;
+  border-bottom: 2px solid #252627;
   padding: 60px 0;
+  position: relative;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .middle-content {
     height: 100%;
+    padding-bottom: 150px;
   }
 }
 .middle-content .mobile-content {
   display: none;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .middle-content .mobile-content {
     display: flex;
     flex-direction: column;
@@ -399,7 +404,6 @@ a:active {
 }
 .middle-content .mobile-content .mobile-txt {
   text-align: center;
-  border-top: 3px solid #252627;
 }
 .middle-content .mobile-content .mobile-txt h3 {
   margin-top: 15px;
@@ -418,14 +422,18 @@ a:active {
   border: 2px solid #252627;
   border-radius: 10px;
 }
+#btm-id {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
 .bottom-content {
-  background-color: #eeeff1;
-  padding: 20px 0;
-  color: #BB0A21;
+  background: rgba(37, 38, 39, 0.5);
+  padding: 40px;
+  vertical-align: bottom;
 }
 .bottom-content .bottom-btn {
   text-align: center;
-  margin: 40px auto;
 }
 .bottom-content .bottom-btn1 {
   background: #FFF9FB;
@@ -440,11 +448,16 @@ a:active {
   color: #FFF9FB;
   background: #4B88A2;
 }
+@media ( max-width: 500px ) {
+  .bottom-content .bottom-btn1 {
+    padding: 10px 100px;
+  }
+}
 .bottom-content .bottom-btn1:hover {
   cursor: pointer;
   transform: scale(1.15);
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .bottom-content .bottom-btn1:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -465,7 +478,7 @@ footer {
   font-size: 1.3rem;
   padding: 20px 0;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   footer {
     background: rgba(187, 10, 33, 0.8);
   }
