@@ -60,6 +60,9 @@ strong {
   color: #FFF9FB;
   font-size: 5rem;
 }
+.tilt-card-shadow {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
