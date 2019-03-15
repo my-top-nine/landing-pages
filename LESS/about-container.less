@@ -1,8 +1,9 @@
-.container{
+.container2{
     max-width: 1500px;
     display: flex;
     flex-flow: column nowrap;
     border-top: 3px solid black;
+    margin: 0 auto;
     @media @mobile{
         border: none;
     }
@@ -39,10 +40,43 @@
     }
     .developer-img{
         display: flex;
-        width: 30%;
+        width: 444px;
         height: 444px;
+        @media @desktopSmall{
+            width: 400px;
+            height: 400px;
+        }
         @media @mobile {
-            width: 100%;
+            margin: 0 auto;
+            height: 380px;
+            width: 380px;
+        }
+    }
+    .fTA-links{
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        a {
+            text-decoration: none;
+            color: inherit;
+            width: fit-content;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        }
+        .fTA-link-github{
+            width: 35px;
+            margin-right: 5px;
+            &:hover {
+                cursor: pointer;
+        }
+        .fTA-link-linkedIn{
+            width: 35px;
+            margin-left: 5px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

@@ -1,32 +1,47 @@
 .top-developer-content{
+    max-width: 1250px;
     display: flex;
-    margin: 230px 0 150px 0;
+    padding: 270px 0;
     justify-content: center;
+    margin: 0 auto;
     @media @mobile {
         flex-flow: column;
-        margin-top: 0;
+        margin-top: 50px;
         padding: 0;
     }
     .tDC-image{ 
-        width: 30%;
-        height: auto;
+        width: 450px;
+        height: 450px;
         margin-right: 10%;
         @media @mobile {
-            width: 100%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        @media @mobileSmall {
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
         }
     }
     .tDC-tagline{
-        width: 25%;
+        max-width: 45%;
         font-size: 5rem;
         text-align: center;
         line-height: 160px;
         margin-top: 85px;
         color: @black;
+        h1{
+            @media @mobile {
+                border-bottom: 2px solid;
+                margin-bottom: 75px;
+                padding-bottom: 80px;
+            }
+        }
         span{
             text-decoration: underline;
         } 
         @media @mobile {
-            width: 100%;
+            max-width: 100%;
         }
     }
 }

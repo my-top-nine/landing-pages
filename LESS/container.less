@@ -11,6 +11,7 @@
             margin: 0;
             flex-flow: column;
             padding: 0;
+            margin-top: 20px;
         }
         .cD1-text{
             width: 60%;
@@ -21,11 +22,15 @@
             }
             h2{
                 font-size: 4.5rem;
-                margin-top: 65px;
+                margin-top: 120px;
+                @media @mobile{
+                    font-size: 4.2rem
+                }
             }
             p{
-                font-size: 3.3rem;
-                line-height: 100px;
+                font-size: 3rem;
+                line-height: 50px;
+                padding-top: 8px;
                 @media @mobile {
                     font-size: 3rem;
                     line-height: 73px;
@@ -51,11 +56,15 @@
             }
             h2{
                 font-size: 4.5rem;
-                margin-top: 65px;
+                margin-top: 120px;
+                @media @mobile{
+                    font-size: 4.2rem
+                }
             }
             p{
-                font-size: 3.3rem;
-                line-height: 100px;
+                font-size: 3rem;
+                line-height: 50px;
+                padding-top: 8px;
                 @media @mobile {
                     font-size: 3rem;
                     line-height: 73px;
@@ -65,10 +74,15 @@
     }
     .container-img{
         display: flex;
-        width: 30%;
+        width: 444px;
         height: 444px;
         @media @mobile {
-            width: 100%;
+            margin: 0 auto;
+        }
+        @media @mobileSmall {
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
         }
     }
 }

@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>My Top Nine Marketing Page</title>
 
-        <link rel="stylesheet" type="text/css" href="CSS/index.css">
-        
-        <link href="https://fonts.googleapis.com/css?family=Nunito:600,800|Open+Sans:600" rel="stylesheet">
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        
-            <!--HEADER-->
-        <header>
-            <div class='nav'>
-                <div class='nav-logo'>
-                    <div class='logo'>
-                        <a href='./index.html'><img src="./img/MTN-logo-white.png" alt="logo"></a>
-                    </div>
-                </div>
-                <div class='nav-btns'>
-                    <a href='./about.html' target="_blank"><button class='nav-btn1'>About Us</button></a>
-                    <a href=# target="_blank"><button class='nav-btn2'>Sign Up/Login</button></a>
-                </div>
-            </div>
-        </header>
+    <title>My Top Nine Marketing Page</title>
 
-        <section class='cta'>
-            <div class='cta-image'>
-                <img src="./img/MTN-hero-image.png" alt="9 random pictures in a 3*3 graph">
-            </div>
-            <div class='cta-catchphrase'>
-                <h1>The Top 9<br> Things That<br> Make You, You.</h1>
-                <div class='cta-button'>
-                    <button>Sign Up</button>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600,800|Open+Sans:600" rel="stylesheet">
+
+    <style>
+        .tilt-card-shadow{
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <!--HEADER-->
+    <header>
+        <div class='nav'>
+            <div class='nav-logo'>
+                <div class='logo'>
+                    <a href='./index.html'><img src="./img/MTN-logo-white.png" alt="logo"></a>
                 </div>
             </div>
-        </section>
-
-        <section class='mission-statement'>
-            <div class='phrase'>
-                <h2>Our <strong>mission</strong> is to help people discover their<br>intrests and identity in their own personal list.</h2>
+            <div class='nav-btns'>
+                <button class='nav-btn1'><a href="./about.html">About Us</a></button>
+                <button class='nav-btn2'><a href="https://my-top-nine-logan.netlify.com/">Sign Up/Login</a></button>
             </div>
-        </section>
-        
-        <div class='container'>
+        </div>
+    </header>
 
-            <div class='citeDescription1'>
-                <div class='container-img'>
-                    <img src="./img/selectFav.jpg" alt="girl pointing">
-                </div>
- 
-                <div class='cD1-text'>
-                    <h2>Selecting your Top 9</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vitae harum nobis, nulla error ullam quibusdam eius.</p>
-                </div>
+    <section class='cta'>
+        <div class='cta-image'>
+            <img src="./img/MTN-hero-image.png" alt="9 random pictures in a 3*3 graph">
+        </div>
+        <div class='cta-catchphrase'>
+            <h1>The Top 9 Things<br> That Make You, You.</h1>
+            <div class='cta-button'>
+                <button><a href="https://my-top-nine-logan.netlify.com/">Sign Up</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class='mission-statement'>
+        <div class='phrase'>
+            <h2>Our <strong>mission</strong> is to help people discover their<br>intrests and identity in their own
+                personal list.</h2>
+        </div>
+    </section>
+
+    <div class='container'>
+
+        <div class='citeDescription1'>
+            <div class='container-img tilt-card tilt-card-shadow'>
+                <img src="./img/selectFav.jpg" alt="girl pointing">
             </div>
 
-            <div class='citeDescription2'>
-                <div class='container-img'>
-                    <img src="./img/ranking.jpg" alt="hop scotch">
-                </div>
-
-                <div class='cD2-text'>
-                    <h2>Ranking</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vitae harum nobis, nulla error ullam quibusdam eius.</p>
-                </div>
+            <div class='cD1-text'>
+                <h2>Selecting your Top 9</h2>
+                <p>Express yourself by ranking your top 9 intrests. There's an endless amount of catagories and people
+                    to choose from. </p>
             </div>
-
         </div>
 
-        <section class="signUpButton">
-            <div class='sUBtn'>
-                <button class="btn">Sign Up</button>
+        <div class='citeDescription2'>
+            <div class='container-img tilt-card tilt-card-shadow'>
+                <img src="./img/ranking.jpg" alt="hop scotch">
             </div>
-        </section>
+
+            <div class='cD2-text'>
+                <h2>Ranking</h2>
+                <p>Place what you tresure most at the top of the list and rank them as you go. You can always switch
+                    around what you placed.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="signUpButton">
+        <div class='sUBtn'>
+            <button class="btn"><a href="https://my-top-nine-logan.netlify.com/">Sign Up</a></button>
+        </div>
+    </section>
 
 
-        <footer class='index-footer'>
-            <p>Copyright 2019 My Top 9</p>
-        </footer>
-        
+    <footer class='index-footer'>
+        <p>Copyright 2019 My Top 9</p>
+    </footer>
 
+    <!-- just for kicks, makes the container images tiltable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.1.19/dest/tilt.jquery.js"></script>
+    <script>
+        $(".tilt-card").tilt({
+            maxTilt: 15,
+            perspective: 1400,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            speed: 1200,
+            glare: true,
+            maxGlare: 0.2,
+            scale: 1
+          });
+    </script>
 
-        
-    </body>
+</body>
+
 </html>

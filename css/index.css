@@ -57,7 +57,7 @@ a:active {
 strong {
   font-weight: bold;
   text-decoration: underline;
-  color: #252627;
+  color: #FFF9FB;
   font-size: 5rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -194,6 +194,7 @@ table {
   position: fixed;
   top: 0;
   background-color: #252627;
+  z-index: 2;
 }
 @media (max-width: 1000px) {
   .nav {
@@ -215,10 +216,15 @@ table {
   }
 }
 .nav .nav-logo .logo {
-  width: 60%;
+  width: 530px;
 }
 .nav .nav-logo .logo img {
   width: 80%;
+}
+@media (max-width: 1000px) {
+  .nav .nav-logo .logo img {
+    width: 100%;
+  }
 }
 .nav .nav-btns {
   width: 100%;
@@ -257,7 +263,7 @@ table {
 @media (max-width: 1000px) {
   .nav .nav-btns .nav-btn1 {
     width: 100%;
-    height: 125px;
+    height: 100px;
     font-size: 4rem;
     margin: 0;
   }
@@ -282,45 +288,61 @@ table {
 @media (max-width: 1000px) {
   .nav .nav-btns .nav-btn2 {
     width: 100%;
-    height: 125px;
+    height: 100px;
     font-size: 4rem;
     margin: 15px 0 25px 0;
   }
 }
 .cta {
+  max-width: 1250px;
   display: flex;
-  margin: 230px 0 150px 0;
+  padding: 280px 0 220px 0;
   justify-content: center;
+  margin: 0 auto;
 }
 @media (max-width: 1000px) {
   .cta {
+    margin: 230px 0 20px 0;
     flex-flow: column;
     margin-top: 0;
     padding: 0;
   }
 }
 .cta .cta-image {
-  width: 30%;
-  height: auto;
+  width: 450px;
+  height: 450px;
   margin-right: 10%;
 }
 @media (max-width: 1000px) {
   .cta .cta-image {
-    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 475px) {
+  .cta .cta-image {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
   }
 }
 .cta .cta-catchphrase {
-  width: 25%;
-  font-size: 5rem;
+  max-width: 45%;
+  font-size: 4.5rem;
   text-align: center;
   line-height: 100px;
   padding-top: 25px;
-  height: 500px;
   color: #252627;
 }
 @media (max-width: 1000px) {
   .cta .cta-catchphrase {
-    width: 100%;
+    max-width: 100%;
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 1250px) {
+  .cta .cta-catchphrase {
+    font-size: 3.5rem;
   }
 }
 .cta .cta-button button {
@@ -339,7 +361,6 @@ table {
 }
 @media (max-width: 1000px) {
   .cta .cta-button button {
-    width: 34%;
     margin-bottom: 25px;
     margin-top: 30px;
     font-size: 3rem;
@@ -352,7 +373,7 @@ table {
   justify-content: center;
   border-bottom: 1px solid black;
   padding: 50px 0;
-  background: #FFF9FB;
+  background: #BB0A21;
 }
 .mission-statement .phrase {
   font-size: 3rem;
@@ -367,7 +388,13 @@ table {
 .mission-statement .phrase h2 {
   text-align: center;
   line-height: 75px;
-  color: #4B88A2;
+  color: #FFF9FB;
+}
+@media (max-width: 1000px) {
+  .mission-statement .phrase h2 {
+    font-size: 2.6rem;
+    line-height: 62px;
+  }
 }
 .container {
   max-width: 1500px;
@@ -385,6 +412,7 @@ table {
     margin: 0;
     flex-flow: column;
     padding: 0;
+    margin-top: 20px;
   }
 }
 .container .citeDescription1 .cD1-text {
@@ -399,11 +427,17 @@ table {
 }
 .container .citeDescription1 .cD1-text h2 {
   font-size: 4.5rem;
-  margin-top: 65px;
+  margin-top: 120px;
+}
+@media (max-width: 1000px) {
+  .container .citeDescription1 .cD1-text h2 {
+    font-size: 4.2rem;
+  }
 }
 .container .citeDescription1 .cD1-text p {
-  font-size: 3.3rem;
-  line-height: 100px;
+  font-size: 3rem;
+  line-height: 50px;
+  padding-top: 8px;
 }
 @media (max-width: 1000px) {
   .container .citeDescription1 .cD1-text p {
@@ -435,11 +469,17 @@ table {
 }
 .container .citeDescription2 .cD2-text h2 {
   font-size: 4.5rem;
-  margin-top: 65px;
+  margin-top: 120px;
+}
+@media (max-width: 1000px) {
+  .container .citeDescription2 .cD2-text h2 {
+    font-size: 4.2rem;
+  }
 }
 .container .citeDescription2 .cD2-text p {
-  font-size: 3.3rem;
-  line-height: 100px;
+  font-size: 3rem;
+  line-height: 50px;
+  padding-top: 8px;
 }
 @media (max-width: 1000px) {
   .container .citeDescription2 .cD2-text p {
@@ -449,12 +489,19 @@ table {
 }
 .container .container-img {
   display: flex;
-  width: 30%;
+  width: 444px;
   height: 444px;
 }
 @media (max-width: 1000px) {
   .container .container-img {
-    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 475px) {
+  .container .container-img {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
   }
 }
 .index-footer {
@@ -468,100 +515,153 @@ table {
   margin-top: 120px;
 }
 .top-developer-content {
+  max-width: 1250px;
   display: flex;
-  margin: 230px 0 150px 0;
+  padding: 270px 0;
   justify-content: center;
+  margin: 0 auto;
 }
 @media (max-width: 1000px) {
   .top-developer-content {
     flex-flow: column;
-    margin-top: 0;
+    margin-top: 50px;
     padding: 0;
   }
 }
 .top-developer-content .tDC-image {
-  width: 30%;
-  height: auto;
+  width: 450px;
+  height: 450px;
   margin-right: 10%;
 }
 @media (max-width: 1000px) {
   .top-developer-content .tDC-image {
-    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 475px) {
+  .top-developer-content .tDC-image {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
   }
 }
 .top-developer-content .tDC-tagline {
-  width: 25%;
+  max-width: 45%;
   font-size: 5rem;
   text-align: center;
   line-height: 160px;
   margin-top: 85px;
   color: #252627;
 }
+@media (max-width: 1000px) {
+  .top-developer-content .tDC-tagline h1 {
+    border-bottom: 2px solid;
+    margin-bottom: 75px;
+    padding-bottom: 80px;
+  }
+}
 .top-developer-content .tDC-tagline span {
   text-decoration: underline;
 }
 @media (max-width: 1000px) {
   .top-developer-content .tDC-tagline {
-    width: 100%;
+    max-width: 100%;
   }
 }
-.container {
+.container2 {
   max-width: 1500px;
   display: flex;
   flex-flow: column nowrap;
   border-top: 3px solid black;
+  margin: 0 auto;
 }
 @media (max-width: 1000px) {
-  .container {
+  .container2 {
     border: none;
   }
 }
-.container .developer {
+.container2 .developer {
   margin: 80px 0;
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 @media (max-width: 1000px) {
-  .container .developer {
+  .container2 .developer {
     margin: 0;
     flex-flow: column;
     padding: 0;
   }
 }
-.container .developer .developer-text {
+.container2 .developer .developer-text {
   width: 60%;
   text-align: center;
 }
 @media (max-width: 1000px) {
-  .container .developer .developer-text {
+  .container2 .developer .developer-text {
     width: 100%;
     margin-bottom: 95px;
   }
 }
-.container .developer .developer-text h2 {
+.container2 .developer .developer-text h2 {
   font-size: 4.5rem;
   margin-top: 65px;
 }
-.container .developer .developer-text p {
+.container2 .developer .developer-text p {
   font-size: 3.3rem;
   line-height: 100px;
 }
 @media (max-width: 1000px) {
-  .container .developer .developer-text p {
+  .container2 .developer .developer-text p {
     font-size: 3rem;
     line-height: 73px;
   }
 }
-.container .developer-img {
+.container2 .developer-img {
   display: flex;
-  width: 30%;
+  width: 444px;
   height: 444px;
 }
-@media (max-width: 1000px) {
-  .container .developer-img {
-    width: 100%;
+@media (max-width: 1250px) {
+  .container2 .developer-img {
+    width: 400px;
+    height: 400px;
   }
+}
+@media (max-width: 1000px) {
+  .container2 .developer-img {
+    margin: 0 auto;
+    height: 380px;
+    width: 380px;
+  }
+}
+.container2 .fTA-links {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.container2 .fTA-links a {
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.container2 .fTA-link-github {
+  width: 35px;
+  margin-right: 5px;
+}
+.container2 .fTA-link-github:hover {
+  cursor: pointer;
+}
+.container2 .fTA-link-github .fTA-link-linkedIn {
+  width: 35px;
+  margin-left: 5px;
+}
+.container2 .fTA-link-github .fTA-link-linkedIn:hover {
+  cursor: pointer;
 }
 .about-footer {
   color: #252627;
