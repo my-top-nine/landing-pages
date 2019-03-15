@@ -570,6 +570,7 @@ table {
 @media (max-width: 1000px) {
   .top-developer-content .tDC-tagline {
     max-width: 100%;
+    font-size: 4rem;
   }
 }
 .container2 {
@@ -635,8 +636,8 @@ table {
 @media (max-width: 1000px) {
   .container2 .developer-img {
     margin: 0 auto;
-    height: 380px;
-    width: 380px;
+    height: 350px;
+    width: 350px;
   }
 }
 .container2 .fTA-links {
